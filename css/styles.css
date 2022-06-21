@@ -301,7 +301,7 @@ body {
     color: #FFFFFF;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -602,6 +602,43 @@ body {
     padding: 20px 24px;
     border: 1px solid var(--project-conteiner-color);
     border-top: none;
+}
+
+.pb-position{
+    position: relative;
+}
+.upper-layer{
+    width: 370px;
+    height: 294px;
+    padding:63px 24px;
+    background: rgba(33, 150, 243, 0.9);
+    display: flex;
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+    transform: translate();
+    transition: 500ms opacity cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    }
+.pb-position:hover .upper-layer{
+    opacity: 1;
+}
+.upper-layer::before{
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+}
+
+.layer-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: var(--main-theme-color);
 }
 
 /* Buttons*/
