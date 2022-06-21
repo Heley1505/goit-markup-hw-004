@@ -340,6 +340,7 @@ body {
     height: 44px;
     justify-content: center;
     color: var(--main-theme-color);
+    cursor: pointer;
 }
 
 .team-social:hover,
@@ -349,7 +350,7 @@ body {
     height: 44px;
     border-radius: 50%;
     background-color: var(--bottom-focuse-color);
-    color: var(--main-theme-color);
+    fill: #FFFFFF;
 }
 
 .team-social:not(:last-child) {
@@ -380,6 +381,7 @@ body {
     border-radius: 4px;
     padding: 16px 32px;
     fill: var(--client-link-bg-color);
+    cursor:pointer;
 }
 
 .clients-link:hover,
@@ -485,6 +487,7 @@ address {
     background: rgba(255, 255, 255, 0.1);
     justify-content: center;
     color: var(--main-theme-color);
+    cursor: pointer;
 }
 
 .soc-item:not(:last-child) {
