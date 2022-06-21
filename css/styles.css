@@ -291,13 +291,14 @@ body {
 .about-member {
     padding: 30px 10px;
     text-align: center;
-    border-radius: 0px 0px 4px 4px;
     border-bottom: 1px solid var(--project-conteiner-color);
 }
 
 .team-design {
     background-color: var(--main-theme-color);
     box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 0px 0px 4px 4px;
+
 }
 
 .team-design:not(:last-child) {
