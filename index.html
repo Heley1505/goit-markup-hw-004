@@ -50,7 +50,16 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="main-botton">Заказать услугу</button>
+          <button data-modal-open type="button" class="main-botton">Заказать услугу</button>
+          <div class="backdrop is-hidden close" data-modal>
+            <div class="modal">
+              <button data-modal-close class="bt-close">
+                <svg>
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <!--Подход-->
@@ -113,13 +122,28 @@
           <h2 class="section-title centred">Чем мы занимаемся</h2>
           <ul class="tech-pic-list list">
             <li class="tech-pic">
-              <img src="./images/box1.jpg" alt="Руки на клавиатуре" width="370" />
+              <div class="servisce-pic">
+                <img src="./images/box1.jpg" alt="Руки на клавиатуре" width="370" />
+                <div class="service-item">
+                  <h3 class="service-title">Десктопные приложения</h3>
+                </div>
+              </div>
             </li>
             <li class="tech-pic">
-              <img src="./images/box2.jpg" alt="Смартфон и ноутбук" width="370" />
+              <div class="servisce-pic">
+                <img src="./images/box2.jpg" alt="Смартфон и ноутбук" width="370" />
+                <div class="service-item">
+                  <h3 class="service-title">Мобильные приложения</h3>
+                </div>
+              </div>
             </li>
             <li class="tech-pic">
-              <img src="./images/box3.jpg" alt="Палитра цветов" width="370" />
+              <div class="servisce-pic">
+                <img src="./images/box3.jpg" alt="Палитра цветов" width="370" />
+                <div class="service-item">
+                  <h3 class="service-title">Дизайнерские решения</h3>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -136,31 +160,44 @@
                 <p lang="en" class="position-style">Product Designer</p>
                 <ul class="soc-links-group list">
                   <li class="team-social">
-                    <a href="https://www.instagram.com/accounts/login/" target="_blank"></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
+                    <a
+                      href="https://www.instagram.com/accounts/login/"
+                      target="_blank"
+                      class="team-social-link"
+                    >
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social">
                     <a
                       href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicnUifQ%3D%3D%22%7D"
                       target="_blank"
-                    ></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-twit"></use>
-                    </svg>
+                      class="team-social-link"
+                    >
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twit"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social">
-                    <a href="https://www.facebook.com/" target="_blank"></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
+                    <a href="https://www.facebook.com/" target="_blank" class="team-social-link">
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social">
-                    <a href="https://www.linkedin.com/login" target="_blank"></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
+                    <a
+                      href="https://www.linkedin.com/login"
+                      target="_blank"
+                      class="team-social-link"
+                    >
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -172,31 +209,44 @@
                 <p lang="en" class="position-style">Frontend Developer</p>
                 <ul class="soc-links-group list">
                   <li class="team-social">
-                    <a href="https://www.instagram.com/accounts/login/" target="_blank"></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
+                    <a
+                      href="https://www.instagram.com/accounts/login/"
+                      target="_blank"
+                      class="team-social-link"
+                    >
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social">
                     <a
                       href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicnUifQ%3D%3D%22%7D"
                       target="_blank"
-                    ></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-twit"></use>
-                    </svg>
+                      class="team-social-link"
+                    >
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twit"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social">
-                    <a href="https://www.facebook.com/" target="_blank"></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
+                    <a href="https://www.facebook.com/" target="_blank" class="team-social-link">
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social">
-                    <a href="https://www.linkedin.com/login" target="_blank"></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
+                    <a
+                      href="https://www.linkedin.com/login"
+                      target="_blank"
+                      class="team-social-link"
+                    >
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -208,31 +258,44 @@
                 <p lang="en" class="position-style">Marketing</p>
                 <ul class="soc-links-group list">
                   <li class="team-social">
-                    <a href="https://www.instagram.com/accounts/login/" target="_blank"></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
+                    <a
+                      href="https://www.instagram.com/accounts/login/"
+                      target="_blank"
+                      class="team-social-link"
+                    >
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social">
                     <a
                       href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicnUifQ%3D%3D%22%7D"
                       target="_blank"
-                    ></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-twit"></use>
-                    </svg>
+                      class="team-social-link"
+                    >
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twit"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social">
-                    <a href="https://www.facebook.com/" target="_blank"></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
+                    <a href="https://www.facebook.com/" target="_blank" class="team-social-link">
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social">
-                    <a href="https://www.linkedin.com/login" target="_blank"></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
+                    <a
+                      href="https://www.linkedin.com/login"
+                      target="_blank"
+                      class="team-social-link"
+                    >
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -244,31 +307,44 @@
                 <p lang="en" class="position-style">UI Designer</p>
                 <ul class="soc-links-group list">
                   <li class="team-social">
-                    <a href="https://www.instagram.com/accounts/login/" target="_blank"></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
+                    <a
+                      href="https://www.instagram.com/accounts/login/"
+                      target="_blank"
+                      class="team-social-link"
+                    >
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social">
                     <a
                       href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicnUifQ%3D%3D%22%7D"
                       target="_blank"
-                    ></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-twit"></use>
-                    </svg>
+                      class="team-social-link"
+                    >
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twit"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social">
-                    <a href="https://www.facebook.com/" target="_blank"></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
+                    <a href="https://www.facebook.com/" target="_blank" class="team-social-link">
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social">
-                    <a href="https://www.linkedin.com/login" target="_blank"></a>
-                    <svg class="footer-icon">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
+                    <a
+                      href="https://www.linkedin.com/login"
+                      target="_blank"
+                      class="team-social-link"
+                    >
+                      <svg class="team-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -347,35 +423,45 @@
           <h3 class="social-title">присоединяйтесь</h3>
           <ul class="footer-soc-links list">
             <li class="soc-item">
-              <a href="https://www.instagram.com/accounts/login/" target="_blank"></a>
-              <svg class="footer-icon">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
+              <a
+                href="https://www.instagram.com/accounts/login/"
+                target="_blank"
+                class="soc-item-link"
+              >
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="soc-item">
               <a
                 href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicnUifQ%3D%3D%22%7D"
                 target="_blank"
-              ></a>
-              <svg class="footer-icon">
-                <use href="./images/icons.svg#icon-twit"></use>
-              </svg>
+                class="soc-item-link"
+              >
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twit"></use>
+                </svg>
+              </a>
             </li>
             <li class="soc-item">
-              <a href="https://www.facebook.com/" target="_blank"></a>
-              <svg class="footer-icon">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
+              <a href="https://www.facebook.com/" target="_blank" class="soc-item-link">
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="soc-item">
-              <a href="https://www.linkedin.com/login" target="_blank"></a>
-              <svg class="footer-icon">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
+              <a href="https://www.linkedin.com/login" target="_blank" class="soc-item-link">
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
+    <script src="./modal.js"></script>
   </body>
 </html>
