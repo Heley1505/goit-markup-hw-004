@@ -771,6 +771,7 @@ body {
 }
 
 .backdrop.is-hidden {
+    overflow: visible;
     opacity: 0;
     pointer-events: none;
 }
